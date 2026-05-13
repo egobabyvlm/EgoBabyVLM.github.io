@@ -153,6 +153,70 @@ body {
   max-width: 60ch;
 }
 
+.paper-subtitle {
+  font-size: 1.05rem;
+  color: #c7d2fe;
+  font-style: italic;
+  margin: -0.5rem 0 1.25rem;
+  max-width: 70ch;
+  font-weight: 500;
+}
+
+/* ---------- Authors / affiliations ---------- */
+.authors {
+  margin: 0 0 0.85rem;
+  font-size: 0.98rem;
+  color: #e0e7ff;
+  line-height: 1.7;
+  max-width: 78ch;
+}
+
+.authors .author {
+  display: inline;
+  margin-right: 0.55rem;
+  white-space: nowrap;
+}
+
+.authors .author a {
+  color: #a5b4fc;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(165, 180, 252, 0.5);
+}
+.authors .author a:hover { color: #fff; border-bottom-color: #fff; }
+
+.authors sup,
+.affiliations sup,
+.contrib-notes sup {
+  font-size: 0.7em;
+  color: #c7d2fe;
+  margin-left: 0.05em;
+}
+
+.affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  font-size: 0.86rem;
+  color: #c7d2fe;
+  margin: 0 0 0.5rem;
+  max-width: 78ch;
+}
+
+.contrib-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  font-size: 0.82rem;
+  color: rgba(199, 210, 254, 0.85);
+  margin: 0 0 1.75rem;
+  max-width: 78ch;
+}
+
+.contrib-notes a {
+  color: #c7d2fe;
+}
+.contrib-notes a:hover { color: #fff; }
+
 .cta {
   display: flex;
   flex-wrap: wrap;
@@ -272,15 +336,6 @@ a { color: var(--accent); }
 }
 
 .section-head { margin-bottom: 1.25rem; }
-
-.link-arrow {
-  display: inline-block;
-  margin-top: 0.6rem;
-  font-weight: 600;
-  font-size: 0.92rem;
-  text-decoration: none;
-}
-.link-arrow:hover { text-decoration: underline; }
 
 /* ---------- Steps ---------- */
 .steps {
@@ -461,11 +516,6 @@ tr.chance .score { color: var(--muted); font-weight: 600; font-size: 0.95rem; }
 }
 
 /* ---------- Submit list ---------- */
-#submit ol {
-  padding-left: 1.25rem;
-  margin: 0;
-}
-#submit ol > li { margin-bottom: 0.5rem; }
 #submit ul {
   margin: 0.5rem 0 0.75rem;
   padding-left: 1.2rem;
